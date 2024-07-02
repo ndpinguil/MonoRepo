@@ -1,0 +1,5 @@
+CREATE TABLE grades (
+    id SERIAL PRIMARY KEY,
+    course VARCHAR(255) NOT NULL,
+    subject VARCHAR(255) NOT NULL
+);
