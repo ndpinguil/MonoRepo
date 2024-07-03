@@ -1,0 +1,14 @@
+*******************Students:*******************
+Host: aws-0-us-east-1.pooler.supabase.com
+Database name: postgres
+Port: 6543
+User: postgres.ekgbmufiuhdghdbnacik
+Password: LfodpdUTzmtX1mNl
+
+
+****************Grades*******************
+Host: aws-0-us-east-1.pooler.supabase.com
+Database name: postgres
+Port: 6543
+User: postgres.apotxxlfbtrnxiuzdmsi
+Password: TR9AphxVllpj9s7C

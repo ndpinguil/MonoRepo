@@ -1,0 +1,27 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway-ms
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: 'true'
+      routes:
+        - id: grades-ms
+          uri: lb://GRADES-MS
+          predicates:
+            - Path=/grades/**
+
+        - id: students-ms
+          uri: lb://STUDENT-MS
+          predicates:
+            - Path=/students/**
+    loadbalancer:
+      cache:
+        enabled: true
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
